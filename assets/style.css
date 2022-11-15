@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+}
+.navbar {
+    height: 40px;
+    color: #fff;
+    border-bottom: 1px solid #b6aeb6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.navbar .navbar-brand{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.navbar .navbar-brand img{
+    height: 30px;
+}
+.navbar .nav-link {
+    margin: 0px 28px;
+    padding: 6px 12px;
+    color: #b6aeb6;
+    text-decoration: none;
+}
+.navbar .nav-link:hover {
+    color:#fff; 
+    border-bottom: 1px solid #fff;
+}
+
+
+/* Containers */
+div.container .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container .card {
+    width: 500px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    margin: 80px 0px 0px 80px;
+    background-color: #222;
+    color: #fff;
+}
+div.container .card .content {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+div.container .card .content * {
+    width: 100%;
+    border-radius: 5px;
+}
+div.container .card .content a{
+    transition: 0.5s;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    text-align: end;
+    padding-right: 15px;
+    color: #dc35dc;
+}
+div.container .card .content a:hover{
+    color: #dc82dc;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger *{
+    content: ' ';
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all .4s ease;
+}
