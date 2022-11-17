@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 function openCard(button) {
     button.path[3].classList.toggle('open');
-    if (button.path[0].src == "http://127.0.0.1:5501/src/open.png"){
+    if (button.path[0].src.indexOf("src/open.png") != -1){
         button.path[0].src = "src/close.png";
     } else {
         button.path[0].src = "src/open.png";

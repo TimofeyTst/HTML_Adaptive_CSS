@@ -60,6 +60,9 @@ body {
     height: 15px;
     background-color: #fff;
 }
+.footer.navbar .nav-links{
+    padding: 0px;
+}
 
 /* Containers */
 div.container .cards{

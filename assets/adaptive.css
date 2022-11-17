@@ -1,23 +1,25 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 960px) {
+    body {
+        overflow-x: hidden;
+    }
     div.container .cards{
         display: grid;
         justify-content: center;
         align-items: center;
-    }
-    body {
-        overflow-x: hidden;
     }
     header .navbar .nav-links{
         position: absolute;
         right: 0;
         top: 0;
         margin: 0;
+        flex-direction: column;
         padding: 50px 0px 30px 0px;
         flex-direction: column;
         gap: 20px;
         font-size: 25px;
         height: 200px;
+
         width: 50%;
         z-index: 2;
 
@@ -66,51 +68,21 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden;
-    }
     header .navbar .nav-links{
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 0;
         padding: 30px 0px;
-        flex-direction: column;
         gap: 18px;
         font-size: 20px;
         height: 180px;
-        width: 50%;
-        z-index: 2;
-
-        background-color: #333;
-
-        border-radius: 25px 0 0px 25px;
-        transform: translateX(100%);
-        transition: transform .5s ease-in-out;
     }
-    header .navbar .nav-links .nav-link{
-        color: #fff;
-        opacity: 0;
+    .footer.navbar {
+        font-size: 12px;
     }
-    header .navbar .nav-links.nav-active{
-        transform: translateX(0%);
+    .footer.navbar .nav-links .nav-link{
+        margin: 0px;
     }
-
-    .burger {
-        display: block;
-        z-index: 2;
-        color: black;
+    .footer.navbar .vertical_line{
+        height: 13px;
     }
-    .burger-active .line1{
-        transform: rotate(-45deg) translate(-5px, 5px);
-    }
-    .burger-active .line2{
-        opacity: 0;
-    }
-    .burger-active .line3{
-        transform: rotate(45deg) translate(-5px, -5px);
-    }
-
     /* Cards */
     div.container .cards{
         display: grid;
@@ -162,16 +134,4 @@
     div.cards .card.open .content p{
         margin: 0;
     }
-        
-    @keyframes navLinksAnim{
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-
 }
